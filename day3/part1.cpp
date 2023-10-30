@@ -60,6 +60,11 @@ void handle_line_read(State &s, const std::string &rucksack_line) {
 	}
 }
 
+// Currently it iterates every line synchronously. It could be made asynchronous using a M:N thread pool for peak performance.
+// Obviously it's not necessary for this problem, but it would be the solution for making this optimal.
+// 
+// Looks like ctpl::ThreadPool is a good library for this, but also potentially just using Boost.Asio would 
+// work just fine and avoid depending on some random lib.
 int main() {
 	auto state = State();
 
