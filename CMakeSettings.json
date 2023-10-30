@@ -23,6 +23,8 @@
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "msvc_x64_x64" ],
+      "enableMicrosoftCodeAnalysis": true,
+      "enableClangTidyCodeAnalysis": true,
       "variables": []
     }
   ]
