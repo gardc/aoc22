@@ -24,8 +24,7 @@ int char_to_priority(char ch) {
 	}
 }
 
-void handle_line_read(State &s, std::string rucksack_line) {
-	//std::cout << line << std::endl;
+void handle_line_read(State &s, const std::string &rucksack_line) {
 	const int len = rucksack_line.length();
 	if (len % 2 != 0) {
 		std::cout << "^^^ line length is not even! that's not supposed to happen" << std::endl;
